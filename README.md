@@ -14,3 +14,5 @@ mvn install:install-file -Dfile=./jars/swing-layout.jar -DgroupId=org.jdesktop.l
 Once that's done, you can build it with `mvn package` that will create target/jsymphonic-0.4-jar-with-dependencies.jar which is your runnable jar
 
 The previous build used precompiled jars in a weird way so I packaged those up into the jars you see in the /jars directory. I tried using moremodern maven-capable versions but they didn't work and I couldn't find the versions that were used here so I just packaged them into jars to make the build "better". Someone could probably change the code to use the newer libraries but it really didn't seem worth it at this point. There's lots of opportunity for code improvement, but unless someone is adding new features, it just doesn't seem worth it right now.
+
+Any new files I add will be in https://github.com/brianpipa/jsymphonic/tree/main/src/main/java/com/pipasoft/jsymphonic I did add ResourceLoader.java to centralize the loading of the icon images.
