@@ -5,7 +5,7 @@ Note that I am not the orignal author. Jsymphonic was/is located at https://sour
 ## Running Jsymphonic
 Download the latest jar from https://github.com/brianpipa/jsymphonic/releases/ and then you need to run it. Depending on your OS, and what you have configured, the way to do this may vary. See https://brianpipa.github.io/jsymphonic for full run instructions
 
-## Building Jsymphonic
+## Building Jsymphonic (for developers only)
 Clone this repo then install the jars to your local maven repo with these commands:
 ```
 mvn install:install-file -Dfile=./jars/jaudiotagger.jar -DgroupId=org -DartifactId=jaudiotagger -Dversion=1.0 -Dpackaging=jar
