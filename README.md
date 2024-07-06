@@ -1,4 +1,4 @@
-# Jsymponic Revival
+# Jsymphonic Revival
 
 Note that I am not the orignal author. Jsymphonic was/is located at https://sourceforge.net/projects/symphonic/ and it appears the original author, nicolas_cardoso, abandoned it. This is just moving the code to github and changing a couple things so it will work on modern JVMs and changign the build so it's more modern (I changed it to Maven). I did not change any of the functionality, so this should just work as before. I tried it on linux and it works. 
 
