@@ -30,9 +30,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+
 import javax.swing.JFileChooser;
+
 import org.naurd.media.jsymphonic.device.sony.nw.NWGeneric;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
 /**
  *
  * @author skiron

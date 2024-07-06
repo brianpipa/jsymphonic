@@ -32,10 +32,10 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.logging.Logger;
 
-import org.danizmax.jsymphonic.gui.ResourceLoader;
 import org.danizmax.jsymphonic.toolkit.DynamicDeviceTreePopUp;
 import org.naurd.media.jsymphonic.title.Title;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
 
 
 /**

@@ -40,22 +40,25 @@ import java.util.TreeMap;
 import java.util.logging.FileHandler;
 import java.util.logging.Formatter;
 import java.util.logging.Handler;
-import javax.swing.UnsupportedLookAndFeelException;
-import org.danizmax.jsymphonic.gui.device.DevicePanel;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
+
 import javax.swing.BoxLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 import org.danizmax.jsymphonic.gui.device.DeviceManager;
+import org.danizmax.jsymphonic.gui.device.DevicePanel;
 import org.danizmax.jsymphonic.gui.local.LocalPanel;
 import org.danizmax.jsymphonic.toolkit.ProfileElement;
 import org.naurd.media.jsymphonic.title.Title;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
 /**
  * This Class is the main JSymphonic window, that contains all the command buttons and all the component
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)

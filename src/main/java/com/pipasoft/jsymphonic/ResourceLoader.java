@@ -1,4 +1,4 @@
-package org.danizmax.jsymphonic.gui;
+package com.pipasoft.jsymphonic;
 
 import java.net.URL;
 

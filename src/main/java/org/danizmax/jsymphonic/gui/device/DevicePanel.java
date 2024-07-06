@@ -27,16 +27,19 @@
 
 package org.danizmax.jsymphonic.gui.device;
 
-import org.danizmax.jsymphonic.toolkit.DynamicDeviceTreePopUp;
 import java.io.File;
 import java.util.logging.Logger;
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreeSelectionModel;
+
 import org.danizmax.jsymphonic.gui.JSymphonicWindow;
-import org.danizmax.jsymphonic.gui.ResourceLoader;
+import org.danizmax.jsymphonic.toolkit.DynamicDeviceTreePopUp;
 import org.naurd.media.jsymphonic.device.sony.nw.NWGenericListener;
+
+import com.pipasoft.jsymphonic.ResourceLoader;
 
 
 /**
@@ -311,7 +314,7 @@ public class DevicePanel extends javax.swing.JPanel implements NWGenericListener
         deviceActionProgressBar.setString(bundle.getString("DevicePanel.Device_is_not_mounted")); // NOI18N
         deviceActionProgressBar.setStringPainted(true);
 
-        clearButton.setIcon(ResourceLoader.getIcon("clear_right.png")); // NOI18N
+        clearButton.setIcon(com.pipasoft.jsymphonic.ResourceLoader.getIcon("clear_right.png")); // NOI18N
         clearButton.setName("clearButton"); // NOI18N
         clearButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
