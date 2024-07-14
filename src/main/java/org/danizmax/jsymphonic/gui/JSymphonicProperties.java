@@ -39,6 +39,8 @@ import org.danizmax.jsymphonic.gui.device.DeviceManager;
 import org.naurd.media.jsymphonic.device.sony.nw.NWGeneric;
 import org.naurd.media.jsymphonic.toolBox.FFMpegToolBox;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 /**
  * This class is a JFrame for changing JSymphonic settings
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)
@@ -242,7 +244,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
         setResizable(false);
 
         cancelButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        cancelButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/cancel.png"))); // NOI18N
+        cancelButton.setIcon(ResourceLoader.getIcon("cancel.png")); // NOI18N
         java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("localization/misc"); // NOI18N
         cancelButton.setText(bundle1.getString("global.Cancel")); // NOI18N
         cancelButton.setName("cancelButton"); // NOI18N
@@ -268,7 +270,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
         });
 
         addButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        addButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/add.png"))); // NOI18N
+        addButton.setIcon(ResourceLoader.getIcon("add.png")); // NOI18N
         addButton.setText(bundle.getString("JSymphonicProperties.addButton.text")); // NOI18N
         addButton.setName("addButton"); // NOI18N
         addButton.addActionListener(new java.awt.event.ActionListener() {
@@ -278,7 +280,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
         });
 
         removeButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        removeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/remove.png"))); // NOI18N
+        removeButton.setIcon(ResourceLoader.getIcon("remove.png")); // NOI18N
         removeButton.setText(bundle.getString("JSymphonicProperties.removeButton.text")); // NOI18N
         removeButton.setName("removeButton"); // NOI18N
         removeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -373,7 +375,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
         );
 
         editButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        editButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/edit.png"))); // NOI18N
+        editButton.setIcon(ResourceLoader.getIcon("edit.png")); // NOI18N
         editButton.setText(bundle.getString("JSymphonicProperties.editButton.text")); // NOI18N
         editButton.setName("editButton"); // NOI18N
         editButton.addActionListener(new java.awt.event.ActionListener() {
@@ -424,7 +426,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.pathPanel.TabConstraints.tabTitle"), new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/device.png")), pathPanel); // NOI18N
+        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.pathPanel.TabConstraints.tabTitle"), ResourceLoader.getIcon("device.png"), pathPanel); // NOI18N
 
         interfacePanel.setName("interfacePanel"); // NOI18N
 
@@ -544,7 +546,7 @@ public class JSymphonicProperties extends javax.swing.JFrame {
                 .addContainerGap(155, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.interfacePanel.TabConstraints.tabTitle"), new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/gui.png")), interfacePanel); // NOI18N
+        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.interfacePanel.TabConstraints.tabTitle"), ResourceLoader.getIcon("gui.png"), interfacePanel); // NOI18N
 
         transferPanel.setName("transferPanel"); // NOI18N
 
@@ -714,10 +716,10 @@ public class JSymphonicProperties extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.transferPanel.TabConstraints.tabTitle"), new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/transfer.png")), transferPanel); // NOI18N
+        jTabbedPane1.addTab(bundle.getString("JSymphonicProperties.transferPanel.TabConstraints.tabTitle"), ResourceLoader.getIcon("transfer.png"), transferPanel); // NOI18N
 
         applyButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        applyButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/ok.png"))); // NOI18N
+        applyButton.setIcon(ResourceLoader.getIcon("ok.png")); // NOI18N
         applyButton.setText(bundle1.getString("global.Apply")); // NOI18N
         applyButton.setName("applyButton"); // NOI18N
         applyButton.addActionListener(new java.awt.event.ActionListener() {

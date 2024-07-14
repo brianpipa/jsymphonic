@@ -44,6 +44,9 @@ import org.naurd.media.jsymphonic.device.sony.nw.NWOmgaudio;
 import org.naurd.media.jsymphonic.title.Title;
 import org.naurd.media.jsymphonic.toolBox.JSymphonicMap;
 import org.naurd.media.jsymphonic.toolBox.JSymphonicTreeCellRenderer;
+
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 import org.naurd.media.jsymphonic.toolBox.DataBaseOmgaudioToolBox;
 
 /**
@@ -92,7 +95,7 @@ public class DeviceManager{
         mounted = false;
         if(mount){
             getLogger().info("Mounting the device" + " \""+ deviceName + "\"");
-            javax.swing.ImageIcon sourceIcon = new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/vignette.png"));
+            javax.swing.ImageIcon sourceIcon = ResourceLoader.getIcon("vignette.png");
             // Create the NWGeneric object according to the generation
             switch(deviceGeneration) {
                 case NWGeneric.GENERATION_0:

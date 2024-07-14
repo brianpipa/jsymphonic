@@ -40,6 +40,8 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 /**
  * This JFrame is used to show information about the application
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)
@@ -211,7 +213,7 @@ public class JSymphonicAbout extends javax.swing.JFrame {
         LogoContainer.setName("LogoContainer"); // NOI18N
         LogoContainer.setPreferredSize(new java.awt.Dimension(61, 61));
 
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/js_logo55.png"))); // NOI18N
+        Logo.setIcon(ResourceLoader.getIcon("js_logo55.png")); // NOI18N
         Logo.setText(bundle.getString("JSymphonicAbout.Logo.text")); // NOI18N
         Logo.setName("Logo"); // NOI18N
 
