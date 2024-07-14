@@ -39,6 +39,8 @@ import javax.swing.JTextField;
 import org.danizmax.jsymphonic.toolkit.ProfileElement;
 import org.naurd.media.jsymphonic.device.sony.nw.NWGeneric;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 /**
  * This class is used to create new profiles, it creates a dialog for editing the JSymphonic profiles.
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)
@@ -234,7 +236,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
         );
 
         okButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        okButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/ok.png"))); // NOI18N
+        okButton.setIcon(ResourceLoader.getIcon("ok.png")); // NOI18N
         java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("localization/misc"); // NOI18N
         okButton.setText(bundle1.getString("global.OK")); // NOI18N
         okButton.setName("okButton"); // NOI18N
@@ -245,7 +247,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
         });
 
         cancelButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        cancelButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/cancel.png"))); // NOI18N
+        cancelButton.setIcon(ResourceLoader.getIcon("cancel.png")); // NOI18N
         cancelButton.setText(bundle1.getString("global.Cancel")); // NOI18N
         cancelButton.setName("cancelButton"); // NOI18N
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
@@ -261,7 +263,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle2.getString("JSymphonicProperties.devPathLabel.text"))); // NOI18N
         jPanel4.setName("jPanel4"); // NOI18N
 
-        deviceBrowseButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/folder.png"))); // NOI18N
+        deviceBrowseButton.setIcon(ResourceLoader.getIcon("folder.png")); // NOI18N
         deviceBrowseButton.setName("deviceBrowseButton"); // NOI18N
         deviceBrowseButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -294,7 +296,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle2.getString("JSymphonicProperties.localPathLabel.text"))); // NOI18N
         jPanel5.setName("jPanel5"); // NOI18N
 
-        localBrowsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/folder.png"))); // NOI18N
+        localBrowsButton.setIcon(ResourceLoader.getIcon("folder.png")); // NOI18N
         localBrowsButton.setName("localBrowsButton"); // NOI18N
         localBrowsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,7 +329,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(bundle2.getString("JSymphonicProperties.exportPathLabel.text"))); // NOI18N
         jPanel6.setName("jPanel6"); // NOI18N
 
-        exportBrowsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/folder.png"))); // NOI18N
+        exportBrowsButton.setIcon(ResourceLoader.getIcon("folder.png")); // NOI18N
         exportBrowsButton.setName("exportBrowsButton"); // NOI18N
         exportBrowsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -378,7 +380,7 @@ public class JSymphonicProfilesDialog extends javax.swing.JDialog {
 
         tempTextField.setName("tempTextField"); // NOI18N
 
-        tempBrowsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/folder.png"))); // NOI18N
+        tempBrowsButton.setIcon(ResourceLoader.getIcon("folder.png")); // NOI18N
         tempBrowsButton.setName("tempBrowsButton"); // NOI18N
         tempBrowsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

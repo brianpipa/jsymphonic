@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>jsymphonic</groupId>
 	<artifactId>jsymphonic</artifactId>
-	<version>0.4</version>
+	<version>0.5</version>
 	<packaging>jar</packaging>
 	<build>
 		<plugins>
@@ -42,16 +42,22 @@
 		</plugins>
 	</build>
 	<dependencies>
-<!-- https://mvnrepository.com/artifact/org.jdesktop.layout/swing-layout -->
+		<!-- https://mvnrepository.com/artifact/org.jdesktop.layout/swing-layout -->
 		<dependency>
-		    <groupId>org.jdesktop.layout</groupId>
-		    <artifactId>swing-layout</artifactId>
-		    <version>1.0</version>	    
+			<groupId>org.jdesktop.layout</groupId>
+			<artifactId>swing-layout</artifactId>
+			<version>1.0</version>
 		</dependency>
 		<dependency>
-		    <groupId>org</groupId>
-		    <artifactId>jaudiotagger</artifactId>
-		    <version>1.0</version>
-		</dependency>							
+			<groupId>org</groupId>
+			<artifactId>jaudiotagger</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.16.1</version>
+		</dependency>
 	</dependencies>
 </project>

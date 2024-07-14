@@ -33,6 +33,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 /**
  *
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)
@@ -91,7 +93,7 @@ public class LogFrame extends javax.swing.JFrame{
         jScrollPane1.setViewportView(logTextArea);
 
         closeButton.setFont(new java.awt.Font("Dialog", 0, 12));
-        closeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/cancel.png"))); // NOI18N
+        closeButton.setIcon(ResourceLoader.getIcon("cancel.png")); // NOI18N
         closeButton.setText(bundle.getString("global.Close")); // NOI18N
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

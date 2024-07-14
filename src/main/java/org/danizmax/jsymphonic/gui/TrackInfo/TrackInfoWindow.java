@@ -33,6 +33,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.naurd.media.jsymphonic.title.Title;
 
+import com.pipasoft.jsymphonic.ResourceLoader;
+
 /**
  * @author  danizmax - Daniel Žalar (danizmax@gmail.com)
  */
@@ -100,7 +102,7 @@ public class TrackInfoWindow extends javax.swing.JFrame {
         setName("Form"); // NOI18N
         setResizable(false);
 
-        okButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/ok.png"))); // NOI18N
+        okButton.setIcon(ResourceLoader.getIcon("ok.png")); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("localization/misc"); // NOI18N
         okButton.setText(bundle.getString("global.OK")); // NOI18N
         okButton.setName("okButton"); // NOI18N
@@ -110,7 +112,7 @@ public class TrackInfoWindow extends javax.swing.JFrame {
             }
         });
 
-        cancelButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/danizmax/jsymphonic/resources/cancel.png"))); // NOI18N
+        cancelButton.setIcon(ResourceLoader.getIcon("cancel.png")); // NOI18N
         cancelButton.setText(bundle.getString("global.Cancel")); // NOI18N
         cancelButton.setName("cancelButton"); // NOI18N
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
